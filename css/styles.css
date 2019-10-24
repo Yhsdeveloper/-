@@ -51,6 +51,7 @@ padding: 3% 15% 7%;
 }
 .nav-item {
   padding: 0 18px;
+  text-align: left;
 }
 .nav-link {
   font-size: 1.2rem;
