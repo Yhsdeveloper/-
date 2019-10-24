@@ -186,6 +186,8 @@ padding: 3% 15% 7%;
 }
 
 /* 내가 따로 쓴 미디어 쿼리 */
+
+
 @media (max-width: 1150px) {
   .press-logo {
     width: 15%;
@@ -202,6 +204,8 @@ padding: 3% 15% 7%;
   }
 }
 /* 선생님꺼 말고 내가 작성한 코드 */
+
+
 @media (min-width: 992px) and (max-width: 1044px) {
   .container-fluid {
     padding-bottom: 0;
