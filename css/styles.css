@@ -1,58 +1,61 @@
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-
-h1 {
-  font-size: 3.5rem;
-  font-family: "Montserrat";
-  line-height: 1.5;
-  font-weight: 900;
-}
-
-h2 {
+h2, h3 {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-family: "Monserrat";
-  font-weight: bold;
-  font-size: 1.5rem;
 }
 
 p {
   color: #8f8f8f;
 }
 
-/* title section */
-#title {
+/*title,pricing section Headings */
+.biggest-heading {
+  font-size: 3.5rem;
+  font-family: "Montserrat";
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
   background-color: #ff4c68;
   color: #fff;
 }
 
-.container-fluid{
-padding: 3% 15% 7%;
+.white-section {
+  background-color: #fff;
 }
-
 
 /* Navigation bar */
 .navbar {
   padding: 0 0 4.5rem;
-
 }
+
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
-
 }
+
 .nav-item {
   padding: 0 18px;
   text-align: left;
 }
+
 .nav-link {
   font-size: 1.2rem;
   font-family: "Montserrat";
@@ -64,26 +67,24 @@ padding: 3% 15% 7%;
   margin: 5% 3% 5% 0;
 }
 
+/* title section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
 /* title image */
 .title-image {
   width: 60%;
   position: absolute;
   right: 30%;
   transform: rotate(25deg);
-  /*
-  feature section에 넣기위해 내가 쓴 코드 이미지를 position: relative;
-   top: 34%;
-   */
-
-  /*   position: absolute; 이놈을 설정해줘서 feature section이 .title-image는 html out of html 이라고 생각해서 위쪽으로 올라온다 */
-
-
-
 }
 
-/*   feature section에 넣기위해 내가 쓴 코드  features section */
-
- /* 나는 div class="row"에 따로 features-row를 만들어서 #features대신 지정했음 또한 여기에 text-align:center을 넣었음
+/*
+  feature section에 넣기위해 내가 쓴 코드 이미지를 position: relative; top: 34%;
+  position: absolute; 이놈을 설정해줘서 feature section이 .title-image는 html out of html 이라고 생각해서 위쪽으로 올라온다 */
+/* 나는 div class="row"에 따로 features-row를 만들어서 #features대신 지정했음 또한 여기에 text-align:center을 넣었음
 또한 line-height:2 를 넣었음 대신 이때 선생님은 line-height 2대신 features-box에 padding 5%을 넣어줌
 이러면 굳이 클래스를 하나 더 안만들어도 되고 코드의 간결성이 되는것같다.
 
@@ -92,20 +93,19 @@ padding: 3% 15% 7%;
   text-align: center;
   line-height: 2;
 } */
+/* features section */
 #features {
   padding: 7% 15%;
-  background-color: #fff;
-  /*  feature section에 넣기위해 선생님이 최종적으로 바꾸기전에 쓴 코드 position: absolute; */
   position: relative;
+  /*  feature section에 넣기위해 선생님이 최종적으로 바꾸기전에 쓴 코드 position: absolute;
+    z-index: 1;이놈은 있어도 되고 이 순간 없어도 되는데 이유는 html natural stacking order를 따라서.flowchart확인 */
+}
 
-
-  /* z-index: 1;이놈은 있어도 되고 이 순간 없어도 되는데 이유는 html natural stacking order를 따라서.flowchart확인 */
-
-
+.feature-title {
+  font-size: 1.5rem;
 }
 
 .features-box {
-  text-align: center;
   padding: 5%;
 }
 
@@ -115,41 +115,49 @@ padding: 3% 15% 7%;
 }
 
 .icon:hover {
-  color:#ff4c68;
+  color: #ff4c68;
 }
 
-/* Testimonials */
+/* Testimonials section */
 #testimonials {
   /* padding: 7% 15%; */
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
 }
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 .testimonial-image {
-  width:10%;
+  width: 10%;
   border-radius: 100%;
   margin: 20px;
 }
-.carousel-item  {
-    padding: 7% 15%;
+
+.carousel-item {
+  padding: 7% 15%;
 }
 
 /* press */
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
+
 .press-logo {
   width: 13%;
-  padding:20px 20px 50px;
-
+  padding: 20px 20px 50px;
 }
 
 /* pricing section */
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+
+.pricing-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
@@ -158,10 +166,7 @@ padding: 3% 15% 7%;
 
 /* Call to Action section */
 #cta {
-  background-color: #ff4c68;
-  color: #fff;
   padding: 7% 15%;
-  text-align: center;
 }
 
 .cta-heading {
@@ -172,54 +177,49 @@ padding: 3% 15% 7%;
 }
 
 /* footer section */
-
 #footer {
-  /* background-color: #fff; */
   padding: 7% 15%;
-  text-align: center;
-
 }
 
 .social-icon {
-
   margin: 20px 10px;
 }
 
 /* 내가 따로 쓴 미디어 쿼리 */
-
-
 @media (max-width: 1150px) {
   .press-logo {
     width: 15%;
   }
 }
+
 /* 선생님은 max-width: 1028px */
 @media (max-width: 991px) {
   #title {
     text-align: center;
   }
+
   .title-image {
     position: static;
     transform: rotate(0);
   }
 }
+
 /* 선생님꺼 말고 내가 작성한 코드 */
-
-
 @media (min-width: 992px) and (max-width: 1044px) {
   .container-fluid {
     padding-bottom: 0;
   }
+
   .title-image {
     width: 65%;
     position: relative;
     left: 10%;
     transform: rotate(0);
   }
+
   .title-second-DownloadButton {
     position: relative;
     left: 10.8rem;
     bottom: 5.1rem;
-
   }
 }
