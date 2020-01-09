@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#header {
+    
+    
+    background-image: url("images/pinkmully.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 1px bottom 60%;
+    background-origin: border-box;
+    background-clip: border-box;
+    height: 800px;
+    width: 100%;
+    
+}
+.navbar-brand,  .features_title {
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+.nav-item {
+    text-align: left;
+}
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.header_heading {
+    font-family: 'Merriweather', serif;  
+    font-size: 3.5rem;
+    font-weight: 900;
+     color: black;
+     background-color: white;
+     position: relative;
+     left: 50%;
+     top: 50%;
+     width: 100%;
+     padding: 5% 5%;
+     opacity: 50%; 
+ }
+ /* features,wightGo Section entire padding */
+ #features,  #withGo {
+     padding: 3% 5%;
+ }
+/* features section */
+ .card {
+    margin: 3%;
+ }
+ .features_title {
+    font-family: 'Merriweather', serif; 
+    margin: 5% 0;
+ }
+.features_yhs, .features_ksh, .features_with  {
+    font-size: 1.7rem;
+    font-weight: bold;
+  
+     
+}
+.features_ksh, .features_with  {
+    
+    margin-top: 8rem;
+}
+
+ 
+ /* features, withGo section background */
+ #features .row, #withGo .row {
+     background-color: #cc00be;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+ }
+/* withGo Section */
+
+ .withGo_paragraph, figure {
+    margin-top: 3rem;
+ font-size: 1.7rem;
+    font-weight: bold;
+    
+}
+ 
+ 
